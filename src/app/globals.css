@@ -1,0 +1,245 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-serif: var(--font-serif);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-serif);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-muted: var(--sidebar-muted);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-brand: var(--brand);
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-info: var(--info);
+  --color-info-soft: var(--info-soft);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+  --shadow-card:
+    0 1px 0 rgb(255 255 255 / 0.7) inset, 0 1px 2px rgb(60 40 20 / 0.05),
+    0 12px 28px -16px rgb(60 40 20 / 0.18);
+  --shadow-pop: 0 32px 80px -24px rgb(16 36 30 / 0.5);
+}
+
+/*
+ * Palette: a calm, classic look. Warm paper canvas, a dark side menu,
+ * thin accent hairlines, and the brand colour kept for actions.
+ * Light theme only. See DESIGN.md.
+ */
+:root {
+  --background: #f6f1e9;
+  --foreground: #1e1b18;
+  --card: #fffefb;
+  --card-foreground: #1e1b18;
+  --popover: #fffefb;
+  --popover-foreground: #1e1b18;
+  --primary: #1f6f78;
+  --primary-foreground: #fffaf5;
+  --secondary: #efe8dc;
+  --secondary-foreground: #1e1b18;
+  --muted: #efe9de;
+  --muted-foreground: #756b5f;
+  --accent: #efe8dc;
+  --accent-foreground: #1e1b18;
+  --destructive: #d92d20;
+  --border: #e4dacb;
+  --input: #dcd0be;
+  --ring: #1f6f78;
+
+  /* The logo's own colour, and the accent used for hairlines, icons and small labels. */
+  --brand: #1a5f68;
+  --gold: #b8862b;
+  --gold-soft: #f7edd8;
+
+  /* Status colours. Always paired with an icon or a label, never colour alone. */
+  --success: #2f6f4e;
+  --success-soft: #e8f2ea;
+  --warning: #a8620a;
+  --warning-soft: #fcf1dc;
+  --info: #2d5b86;
+  --info-soft: #e8f0f7;
+
+  --chart-1: #1f6f78;
+  --chart-2: #25221f;
+  --chart-3: #b8862b;
+  --chart-4: #2f6f4e;
+  --chart-5: #2d5b86;
+
+  --radius: 0.625rem;
+
+  --sidebar: #25221f;
+  --sidebar-foreground: #e6dfd0;
+  --sidebar-muted: #b3ab9e;
+  --sidebar-primary: #e2b866;
+  --sidebar-primary-foreground: #25221f;
+  --sidebar-accent: rgb(255 250 240 / 0.08);
+  --sidebar-accent-foreground: #fffaf0;
+  --sidebar-border: rgb(255 250 240 / 0.1);
+  --sidebar-ring: #e2b866;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans;
+  }
+  /*
+   * Everything is sized in rem, so this one rule makes the whole interface
+   * about 80% on desktop screens, as if the browser were zoomed out, while
+   * still spreading across the full width. Phones and small tablets keep
+   * full size. Change the percentage to make the whole app larger or smaller.
+   */
+  @media (min-width: 64rem) {
+    html {
+      font-size: 80%;
+    }
+  }
+  ::selection {
+    background: color-mix(in srgb, #1f6f78 18%, transparent);
+  }
+}
+
+/* Gentle entrance: things settle into place instead of appearing. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  animation-delay: calc(var(--i, 0) * 80ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
+
+/* A faint diamond lattice. Used on the dark panels. */
+.lattice {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='56' viewBox='0 0 56 56'%3E%3Cpath d='M28 0 56 28 28 56 0 28Z' fill='none' stroke='%23fffaf0' stroke-opacity='.06' stroke-width='1'/%3E%3C/svg%3E");
+}
+
+/*
+ * Printing labels (the test print in the label designer, item labels from the catalog).
+ * The labels are drawn into #label-print-root, a direct child of <body> that is never
+ * shown on screen: one .label-copy per label, each the size of its own page. While
+ * printing, only it is shown, on a page the size of the label (set when printing starts).
+ */
+#label-print-root {
+  display: none;
+}
+
+@media print {
+  body.printing-label {
+    margin: 0;
+    background: white;
+  }
+  body.printing-label > *:not(#label-print-root) {
+    display: none !important;
+  }
+  body.printing-label > #label-print-root {
+    display: block !important;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  body.printing-label .label-copy {
+    break-after: page;
+  }
+  body.printing-label .label-copy:last-child {
+    break-after: auto;
+  }
+}
+/*
+ * Reports (the inventory as a PDF): drawn into #report-print-root, a direct child of <body>
+ * that is never shown on screen. While printing, only it is shown, on A4 across the page.
+ */
+#report-print-root {
+  display: none;
+}
+
+@media print {
+  body.printing-report {
+    margin: 0;
+    background: white;
+  }
+  body.printing-report > *:not(#report-print-root) {
+    display: none !important;
+  }
+  body.printing-report > #report-print-root {
+    display: block !important;
+    color: black;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  body.printing-report #report-print-root thead {
+    display: table-header-group;
+  }
+  body.printing-report #report-print-root tr {
+    break-inside: avoid;
+  }
+}
+
+/*
+ * In Hebrew, numbers, dates and codes are written left to right (dir="ltr") but still line up on
+ * the right, under their column titles and labels, like every other text. Outside any layer, so it
+ * wins over the text-start utility that would put them on the left.
+ */
+[dir="rtl"] :is(td, th, dd)[dir="ltr"],
+[dir="rtl"] [dir="ltr"].text-start {
+  text-align: right;
+}

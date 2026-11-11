@@ -1,0 +1,38 @@
+# Render blueprint: one web service and one PostgreSQL database in Frankfurt.
+# Secrets marked "sync: false" are typed by the owner in Render, never stored in git.
+services:
+  - type: web
+    name: northfield-factory
+    runtime: node
+    region: frankfurt
+    plan: starter
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    startCommand: pnpm start
+    healthCheckPath: /login
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: northfield-db
+          property: connectionString
+      - key: AUTH_SECRET
+        generateValue: true
+      - key: APP_URL
+        sync: false
+      - key: PRIORITY_MODE
+        value: live
+      - key: PRIORITY_WRITE
+        value: "on"
+      - key: SEED_OWNER_EMAIL
+        sync: false
+      - key: SEED_OWNER_PASSWORD
+        sync: false
+      - key: SEED_OWNER_NAME
+        sync: false
+
+databases:
+  - name: northfield-db
+    region: frankfurt
+    plan: basic-256mb
+    postgresMajorVersion: "17"
