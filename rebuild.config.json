@@ -1,0 +1,23 @@
+{
+  "COMPANY_NAME": "Northfield Foods",
+  "COMPANY_NAME_HE": "נורת׳פילד פודס",
+  "COMPANY_FILE_PREFIX": "Northfield-Foods",
+  "SYSTEM_NAME": "Northfield Foods - Factory",
+  "SYSTEM_NAME_HE": "נורת׳פילד פודס - מפעל",
+  "SENDER_NAME": "Northfield Foods System",
+  "APP_ID": "northfield",
+  "APP_URL": "https://app.example.com",
+  "APP_HOST": "app.example.com",
+  "COMPANY_DOMAIN": "example.com",
+  "OWNER_EMAIL": "owner@example.com",
+  "OWNER_NAME": "Alex Owner",
+  "SMTP_FROM_ADDRESS": "system@example.com",
+  "RENDER_SERVICE_NAME": "northfield-factory",
+  "RENDER_DB_NAME": "northfield-db",
+  "QR_PREFIX": "NF",
+  "BRAND_COLOR": "#1f6f78",
+  "BRAND_COLOR_ALT": "#1a5f68",
+  "ACCENT_COLOR": "#b8862b",
+  "ACCENT_COLOR_LIGHT": "#e2b866",
+  "ACCENT_COLOR_SOFT": "#f7edd8"
+}

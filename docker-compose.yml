@@ -1,0 +1,18 @@
+## Optional: a real PostgreSQL for local development.
+## Without Docker the app uses an embedded Postgres (PGlite) in ./data/pglite.
+## With Docker: `docker compose up -d` and set DATABASE_URL in .env.local (see .env.example).
+services:
+  db:
+    image: postgres:17-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: weighing
+      POSTGRES_USER: weighing
+      POSTGRES_PASSWORD: weighing
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+volumes:
+  pgdata:

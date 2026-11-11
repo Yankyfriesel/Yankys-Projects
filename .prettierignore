@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+build
+coverage
+data
+pnpm-lock.yaml
+src/components/ui

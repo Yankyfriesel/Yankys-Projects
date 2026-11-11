@@ -1,0 +1,2085 @@
+{
+  "app": {
+    "name": "Northfield Foods - Factory",
+    "company": "Northfield Foods - Factory",
+    "tagline": "Weighing, labels and inventory beside Priority"
+  },
+  "dashboard": {
+    "greeting": {
+      "morning": "Good morning",
+      "afternoon": "Good afternoon",
+      "evening": "Good evening",
+      "night": "Good night"
+    },
+    "welcome": "{greeting}, {name}",
+    "unavailable": {
+      "title": "Priority is not answering",
+      "body": "The stock cannot be shown right now. Nothing was lost. Try again in a moment."
+    },
+    "subtitle": "Here is how the factory stands right now.",
+    "updatedAt": "Updated at {time}",
+    "refresh": "Refresh data from Priority",
+    "refreshing": "Refreshing…",
+    "stats": {
+      "title": "Key numbers",
+      "weight": "Total weight",
+      "boxes": "Boxes in stock",
+      "items": "Different items",
+      "attention": "Need attention"
+    },
+    "warehouses": {
+      "title": "Warehouses",
+      "subtitle": "Each warehouse as defined in Priority."
+    },
+    "warehouse": {
+      "code": "Warehouse {code}",
+      "boxes": "{count, plural, one {# box} other {# boxes}}",
+      "items": "{count, plural, one {# item} other {# items}}",
+      "allValid": "All boxes are in date",
+      "empty": "There are no boxes in this warehouse.",
+      "legend": {
+        "valid": "In date",
+        "soon": "Expiring soon",
+        "expired": "Expired"
+      },
+      "expiredBoxes": "{count, plural, one {# box expired} other {# boxes expired}}",
+      "soonBoxes": "{count, plural, one {# box expiring soon} other {# boxes expiring soon}}",
+      "attentionItems": "{count, plural, one {# item needs} other {# items need}} attention",
+      "details": {
+        "barcode": "Box barcode",
+        "weight": "Weight",
+        "slaughter": "Slaughter date",
+        "expiry": "Expiry date",
+        "entered": "Entered"
+      }
+    },
+    "attentionList": {
+      "open": "Show the {count} boxes that need attention",
+      "title": "Items that need attention",
+      "subtitle": "{items, plural, one {# item} other {# items}} with {boxes, plural, one {# box} other {# boxes}} expired or expiring soon. Press an item to see its boxes."
+    }
+  },
+  "shell": {
+    "navigation": "Main navigation",
+    "collapse": "Collapse the menu",
+    "expand": "Expand the menu",
+    "groups": {
+      "operations": "Operations",
+      "system": "System"
+    },
+    "openMenu": "Open the menu",
+    "closeMenu": "Close the menu",
+    "account": "My account",
+    "attention": "{count, plural, one {# warning needs attention} other {# warnings need attention}}"
+  },
+  "language": {
+    "label": "Language",
+    "switchTo": "עברית",
+    "he": "Hebrew",
+    "en": "English"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "catalog": "Item catalog",
+    "receiving": "Goods receiving",
+    "vendor": "Vendor receiving",
+    "inventory": "Inventory management",
+    "settings": "System settings",
+    "admin": "System administration",
+    "shipping": "Shipping labels"
+  },
+  "screens": {
+    "dashboard": "Warehouses, boxes and expiry at a glance",
+    "catalog": "Items from Priority and item label printing",
+    "receiving": "Boxes from packaging: scan, weigh, label",
+    "vendor": "Vendor boxes by their 38 barcode",
+    "inventory": "Stock down to the box, filters, reports and moves",
+    "settings": "Labels, scale and printer, storage rooms, Priority connection",
+    "admin": "Users, permissions and the activity log",
+    "shipping": "Labels for orders picked and confirmed in Priority"
+  },
+  "access": {
+    "owner": "Owner",
+    "noScreens": "You have no permission for any screen. Contact the administrator.",
+    "device": {
+      "desktop": "Desktop",
+      "phone": "Phone"
+    },
+    "deviceNotAllowed": {
+      "title": "No access from this device",
+      "body": "Your user is not allowed to use the system from a {device}. Contact the administrator."
+    }
+  },
+  "common": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "close": "Close",
+    "back": "Back",
+    "next": "Next",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "search": "Search",
+    "loading": "Loading…",
+    "yes": "Yes",
+    "no": "No",
+    "actions": "Actions",
+    "refresh": "Refresh",
+    "kg": "kg",
+    "boxes": "{count, plural, one {# box} other {# boxes}}",
+    "error": "Something went wrong. Please try again.",
+    "notFound": "Page not found"
+  },
+  "auth": {
+    "signOut": "Sign out",
+    "signedInAs": "Signed in as {name}",
+    "device": {
+      "desktop": "Desktop",
+      "phone": "Phone"
+    },
+    "login": {
+      "title": "Sign in",
+      "subtitle": "Enter the email and password you received from the administrator.",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Sign in",
+      "or": "or",
+      "google": "Sign in with Google",
+      "errors": {
+        "invalid": "Wrong email or password.",
+        "disabled": "This user is disabled. Contact the administrator.",
+        "rateLimited": "Too many attempts. Try again in a minute.",
+        "locked": "Too many wrong passwords. This account is locked for 15 minutes.",
+        "googleNotRegistered": "This Google account is not registered. Contact the administrator.",
+        "generic": "Sign-in failed. Please try again.",
+        "invalidCode": "Wrong code. Try again.",
+        "codeExpired": "The sign-in took too long. Please enter your email and password again.",
+        "twoFactorRequired": "Your account uses two-step verification. Sign in with your email, password and code, not with Google."
+      },
+      "reveal": "Hold to reveal what you typed",
+      "idleSignedOut": "You were signed out because the screen was not touched for a while. Please sign in again.",
+      "code": {
+        "hint": "Open your authenticator app and type the 6-digit code for Northfield Foods - Factory.",
+        "backupHint": "Type one of the backup codes you saved. Each code works once.",
+        "label": "6-digit code",
+        "backupLabel": "Backup code",
+        "submit": "Verify and sign in",
+        "useBackup": "Use a backup code",
+        "useApp": "Use the authenticator app",
+        "back": "Back"
+      }
+    },
+    "changePassword": {
+      "title": "Choose a new password",
+      "introForced": "Hello {name}. This is your first login or your password was reset. Choose a new password to continue.",
+      "intro": "Choose a new password. You will be signed out of all other devices.",
+      "temporary": "Temporary password",
+      "current": "Current password",
+      "new": "New password",
+      "confirm": "Confirm new password",
+      "rules": "At least 8 characters, with letters, digits and a capital letter or symbol. Different from the temporary password.",
+      "submit": "Save and continue",
+      "errors": {
+        "tooShort": "The new password must have at least 8 characters.",
+        "weak": "The password is too easy to guess. Use letters, digits and a capital letter or symbol, and do not use your name or a common word.",
+        "mismatch": "The two passwords do not match.",
+        "sameAsCurrent": "The new password must differ from the current one.",
+        "wrongCurrent": "The current password is wrong.",
+        "rateLimited": "Too many attempts. Try again in a minute.",
+        "generic": "Changing the password failed. Please try again."
+      }
+    },
+    "idle": {
+      "title": "Still there?",
+      "body": "For your security you will be signed out in {seconds, plural, one {# second} other {# seconds}}.",
+      "stay": "Stay signed in"
+    }
+  },
+  "admin": {
+    "tabs": {
+      "users": "Users",
+      "log": "Activity log",
+      "sends": "Sends to Priority",
+      "menu": "Administration parts",
+      "hints": {
+        "users": "People and what they may do",
+        "log": "Everything that was done",
+        "sends": "Boxes Priority has not taken yet",
+        "security": "Automatic sign-out",
+        "messages": "Questions and requests from people"
+      },
+      "security": "Security",
+      "messages": "Messages"
+    },
+    "users": {
+      "title": "Users",
+      "subtitle": "Who can sign in, and what each person may see and do.",
+      "count": "{count, plural, one {# user} other {# users}}",
+      "new": "New user",
+      "empty": "There are no users yet.",
+      "columns": {
+        "user": "User",
+        "jobTitle": "Job title",
+        "status": "Status",
+        "lastSeen": "Last sign-in",
+        "actions": "Actions"
+      },
+      "badges": {
+        "owner": "Owner",
+        "active": "Active",
+        "disabled": "Disabled",
+        "mustChange": "Must change password"
+      },
+      "never": "Never signed in",
+      "screens": "Screens",
+      "allScreens": "All screens",
+      "noScreens": "No screens yet",
+      "desktop": "Computer",
+      "phone": "Phone",
+      "menu": {
+        "label": "Actions for {name}",
+        "edit": "Edit and permissions",
+        "reset": "Reset password",
+        "disable": "Disable user",
+        "enable": "Enable user",
+        "delete": "Delete user",
+        "resetTwoFactor": "Reset two-step verification"
+      }
+    },
+    "form": {
+      "createTitle": "New user",
+      "createDescription": "The system creates a temporary password and shows it once.",
+      "editTitle": "Edit {name}",
+      "editDescription": "Details and permissions of this user.",
+      "profile": "Details",
+      "name": "Full name",
+      "displayName": "Display name",
+      "displayNameHint": "Shown in the menu and in the activity log. Empty uses the full name.",
+      "jobTitle": "Job title",
+      "email": "Email",
+      "emailHint": "The email is the login and cannot be changed later.",
+      "language": "Language",
+      "create": "Create user",
+      "save": "Save changes",
+      "saving": "Saving…"
+    },
+    "permissions": {
+      "title": "Permissions",
+      "intro": "Choose for each screen what this person can do. Open a screen to allow single actions.",
+      "ownerNote": "The owner can do everything and needs no permissions.",
+      "limited": "You can only give permissions that you have yourself.",
+      "levels": {
+        "none": "No access",
+        "view": "View only",
+        "full": "Everything",
+        "custom": "Custom"
+      },
+      "allowed": "{allowed} of {total} allowed",
+      "details": "Single actions",
+      "devices": {
+        "title": "Devices",
+        "hint": "Where this person may sign in and use the system.",
+        "desktop": "Desktop computer",
+        "phone": "Phone"
+      }
+    },
+    "perm": {
+      "dashboard": {
+        "view": "See the dashboard",
+        "refresh": "Refresh data from Priority",
+        "reorder": "Arranging the order of the storage rooms"
+      },
+      "catalog": {
+        "view": "See the catalog",
+        "details": "Open item details",
+        "print": "Print item labels",
+        "changeCopies": "Change the number of copies",
+        "packaging": "Choose the packaging type of an item"
+      },
+      "receiving": {
+        "view": "See goods receiving",
+        "scan": "Scan and weigh boxes",
+        "manual": "Enter a box by hand",
+        "reprint": "Reprint a label",
+        "autoPrint": "Turn automatic printing on or off",
+        "todayList": "See today's boxes"
+      },
+      "vendor": {
+        "view": "See vendor receiving",
+        "scan": "Scan vendor boxes",
+        "reprint": "Reprint a label",
+        "todayList": "See today's boxes"
+      },
+      "inventory": {
+        "view": "See the inventory",
+        "filters": "Use filters",
+        "export": "Export reports",
+        "pallets": "Build pallets by ticking boxes in the system",
+        "palletsScan": "Build pallets by scanning boxes with the scanner"
+      },
+      "settings": {
+        "view": "Open the settings",
+        "labels": {
+          "view": "See label settings and the logo",
+          "edit": "Change label settings and the logo"
+        },
+        "hardware": {
+          "view": "See scale and printer settings",
+          "edit": "Change scale and printer settings",
+          "scale": "Connecting and disconnecting the scale"
+        },
+        "categories": {
+          "view": "See storage rooms and alerts",
+          "edit": "Change storage rooms and alerts"
+        },
+        "vendorOrder": {
+          "view": "See the vendor field order",
+          "edit": "Change the vendor field order"
+        },
+        "priority": {
+          "view": "See the Priority connection",
+          "edit": "Change the Priority connection"
+        }
+      },
+      "admin": {
+        "view": "Open the administration",
+        "users": {
+          "create": "Create users",
+          "edit": "Edit users",
+          "disable": "Disable and enable users",
+          "delete": "Delete users"
+        },
+        "permissions": "Change permissions",
+        "resetPassword": "Reset passwords",
+        "activityLog": "See the activity log",
+        "sends": "See and retry sends to Priority",
+        "security": "Set the automatic sign-out time",
+        "messages": "See and answer messages"
+      },
+      "device": {
+        "desktop": "Use from a desktop computer",
+        "phone": "Use from a phone"
+      },
+      "shipping": {
+        "view": "See shipping labels",
+        "print": "Print shipping labels",
+        "delete": "Delete orders from the list"
+      }
+    },
+    "password": {
+      "createdTitle": "User created",
+      "resetTitle": "Password reset",
+      "description": "Give this temporary password to {email}. It is shown only now and cannot be looked up later.",
+      "temporary": "Temporary password",
+      "copy": "Copy",
+      "copied": "Copied",
+      "warning": "The user must choose a new password at the first sign-in. If this window closes, reset the password again to get a new one.",
+      "done": "I gave it to the user",
+      "emailSent": "The sign-in link and this temporary password were also emailed to {email}.",
+      "emailNotSent": "No email was sent to {email} (email is not set up, or sending failed). Give the person the password yourself.",
+      "emailedDescription": "The sign-in details were sent to {email} by email.",
+      "checkSpam": "If it does not arrive, ask the person to look in the spam folder and press Not spam.",
+      "showPassword": "Show the temporary password",
+      "doneEmailed": "Done"
+    },
+    "confirm": {
+      "cancel": "Cancel",
+      "reset": {
+        "title": "Reset the password?",
+        "body": "{name} will be signed out everywhere and must choose a new password with a new temporary one.",
+        "action": "Reset password"
+      },
+      "disable": {
+        "title": "Disable this user?",
+        "body": "{name} will be signed out and cannot sign in until you enable the user again. The history stays.",
+        "action": "Disable"
+      },
+      "enable": {
+        "title": "Enable this user?",
+        "body": "{name} will be able to sign in again.",
+        "action": "Enable"
+      },
+      "delete": {
+        "title": "Delete this user?",
+        "body": "{name} will be removed for good. If this user has history in the system, you will be warned first.",
+        "action": "Delete",
+        "historyWarning": "{name} has history in the system: logins, boxes received, pallets or moves. If you delete this user, that history stays and still shows the name, but it is no longer linked to a user, and this cannot be undone. Disabling the user instead keeps everything linked.",
+        "anyway": "Delete anyway"
+      },
+      "resetTwoFactor": {
+        "title": "Reset two-step verification?",
+        "body": "{name} will be signed out everywhere and can sign in with the password alone until they set up two-step verification again. Use this when the phone was lost.",
+        "action": "Reset"
+      }
+    },
+    "toast": {
+      "saved": "Changes saved",
+      "disabled": "User disabled",
+      "enabled": "User enabled",
+      "deleted": "User deleted",
+      "twoFactorReset": "Two-step verification was reset."
+    },
+    "errors": {
+      "EMAIL_TAKEN": "A user with this email already exists.",
+      "USER_NOT_FOUND": "This user no longer exists.",
+      "OWNER_PROTECTED": "The owner cannot be changed this way.",
+      "HAS_HISTORY": "This user has history in the system and cannot be deleted. Disable the user instead.",
+      "SELF_PROTECTED": "You cannot do this to your own user.",
+      "INVALID_PERMISSION": "One of the permissions is not valid.",
+      "NOT_ALLOWED": "You do not have permission for this.",
+      "INVALID_INPUT": "Check the fields: a full name and a valid email are required.",
+      "GENERIC": "Something went wrong. Please try again."
+    },
+    "log": {
+      "title": "Activity log",
+      "subtitle": "Everything that happens in the system, newest first. Entries cannot be changed.",
+      "count": "{count, plural, one {# entry} other {# entries}}",
+      "empty": "No entries match these filters.",
+      "filters": {
+        "user": "User",
+        "title": "Filter the log",
+        "active": "Filtered",
+        "allUsers": "All users",
+        "action": "Action",
+        "allActions": "All actions",
+        "from": "From",
+        "to": "To",
+        "apply": "Show",
+        "clear": "Clear"
+      },
+      "columns": {
+        "when": "When",
+        "user": "User",
+        "action": "Action",
+        "subject": "Concerning",
+        "device": "Device"
+      },
+      "page": "Page {page} of {pages}",
+      "previous": "Previous",
+      "next": "Next",
+      "system": "System",
+      "actions": {
+        "auth": {
+          "login": "Signed in",
+          "loginFailed": "Failed sign-in",
+          "loginBlocked": "Sign-in blocked (account locked)",
+          "logout": "Signed out",
+          "passwordChanged": "Changed password",
+          "googleRefused": "Google sign-in refused",
+          "twoFactorEnabled": "Turned on two-step verification",
+          "twoFactorDisabled": "Turned off two-step verification",
+          "twoFactorFailed": "Wrong two-step code"
+        },
+        "user": {
+          "languageChanged": "Changed the language"
+        },
+        "admin": {
+          "userCreated": "Created a user",
+          "userEdited": "Edited a user",
+          "userDisabled": "Disabled a user",
+          "userEnabled": "Enabled a user",
+          "userDeleted": "Deleted a user",
+          "passwordReset": "Reset a password",
+          "permissionsChanged": "Changed permissions",
+          "twoFactorReset": "Reset two-step verification of a user",
+          "sessionEnded": "Signed a user out from one place"
+        },
+        "catalog": {
+          "itemLabelPrinted": "Printed item labels",
+          "packagingChanged": "Changed the packaging type of an item"
+        },
+        "settings": {
+          "logoChanged": "Replaced a logo",
+          "logoRestored": "Restored an original logo",
+          "labelLayoutCreated": "Created a label layout",
+          "labelLayoutSaved": "Saved a label layout",
+          "labelLayoutDeleted": "Deleted a label layout",
+          "labelCategoryDefaultChanged": "Changed a category's default label layout",
+          "priorityChanged": "Changed the Priority connection",
+          "standInChanged": "Changed the stand-in behaviour",
+          "categoryWarehouseChanged": "Changed the storage room of a category",
+          "vendorOrderChanged": "Changed the vendor receiving order",
+          "alertDaysChanged": "Changed the expiry alert days of a category",
+          "storageTextChanged": "Changed the storage text of a category",
+          "labelDefaultChanged": "Changed the default item label",
+          "shelfLifeChanged": "Changed the days to expiry of a category",
+          "roomOrderChanged": "Changed the order of the storage rooms",
+          "idleTimeoutChanged": "Changed the automatic sign-out time",
+          "packagingTypeAdded": "Added a packaging type",
+          "packagingTypeChanged": "Changed a packaging type",
+          "packagingTypeDeleted": "Deleted a packaging type",
+          "imported": "Loaded settings from another system",
+          "shippingKeyChanged": "Changed the key of the shipping labels address",
+          "shippingLabelsChanged": "Changed the shipping label settings"
+        },
+        "receiving": {
+          "boxReceived": "Received a box",
+          "labelReprinted": "Reprinted a box label",
+          "sendRetried": "Retried failed sends to Priority"
+        },
+        "inventory": {
+          "boxesMoved": "Moved boxes between warehouses",
+          "moveRetried": "Retried failed moves to Priority",
+          "palletCreated": "Made a pallet"
+        },
+        "messages": {
+          "sent": "Sent a message to the admin",
+          "handled": "Answered a message"
+        },
+        "assistant": {
+          "asked": "Asked the question helper"
+        },
+        "shipping": {
+          "orderReceived": "Received an order from Priority",
+          "testOrder": "Made a test order for shipping labels",
+          "labelsPrinted": "Printed shipping labels",
+          "orderDeleted": "Deleted an order from the shipping labels list"
+        }
+      },
+      "print": "Print report",
+      "preparing": "Preparing…",
+      "printFailed": "The report could not be made.",
+      "truncated": "Only the newest {shown} of {total} entries are printed. Narrow the dates to print the rest."
+    },
+    "sends": {
+      "title": "Boxes not in Priority yet",
+      "subtitle": "Every box is saved here first and then sent to Priority. Boxes that Priority could not take yet are tried again by themselves; the ones it refused wait here for a person.",
+      "empty": "Every box saved here has reached Priority.",
+      "columns": {
+        "received": "Received",
+        "item": "Item",
+        "barcode": "Box barcode",
+        "weight": "Weight",
+        "state": "State",
+        "why": "Reason"
+      },
+      "states": {
+        "failed": "Needs attention",
+        "pending": "Retrying (try {attempts})",
+        "writeClosed": "Waiting for Priority"
+      },
+      "reasons": {
+        "UNAVAILABLE": "Priority did not answer.",
+        "UNKNOWN_ITEM": "Priority does not know this item.",
+        "UNKNOWN_WAREHOUSE": "Priority does not have the storage room.",
+        "UNKNOWN_ORDER": "Priority does not have the order.",
+        "UNKNOWN_BOX": "Priority does not know this box.",
+        "DUPLICATE_BOX": "Priority already had this box.",
+        "OTHER": "Priority refused it.",
+        "WRITE_NOT_OPEN": "Priority does not accept boxes from this system yet. It is sent by itself as soon as that is switched on."
+      },
+      "retry": "Send again",
+      "retryAll": "Send all again ({count})",
+      "retried": "{count, plural, one {# box} other {# boxes}} put back in the queue.",
+      "retryFailed": "Could not do this. Try again."
+    },
+    "security": {
+      "title": "Automatic sign-out",
+      "description": "For security, a person who leaves the system open is signed out after this time without touching the screen, scanning or typing. A notice appears a minute before.",
+      "label": "Sign out after",
+      "hint": "Counted from the last touch of the screen, a key press or a scan. Applies to everyone, the next time a page opens.",
+      "neverHint": "Nobody is signed out automatically. Not recommended on computers others can reach.",
+      "never": "Never",
+      "minutes": "{count, plural, one {# minute} other {# minutes}}",
+      "hours": "{count, plural, one {# hour} other {# hours}}",
+      "save": "Save",
+      "saved": "The sign-out time was saved.",
+      "failed": "The sign-out time could not be saved."
+    },
+    "alerts": {
+      "title": "Security warnings",
+      "description": "Attempts to sign in that look like someone trying to break in, from the last days. New ones show as a red number on the Administration menu.",
+      "none": "No warnings. Nobody tried to break in.",
+      "new": "{count, plural, one {# new} other {# new}}",
+      "markSeen": "Mark as seen",
+      "marked": "Marked as seen.",
+      "failed": "Marking failed. Please try again.",
+      "last": "Last attempt: {time}",
+      "from": "from",
+      "hint": "Every attempt is also in the activity log. A locked account opens by itself after 15 minutes.",
+      "kinds": {
+        "locked": {
+          "title": "Account locked after wrong passwords",
+          "body": "Someone kept trying {subject} after it was locked ({count, plural, one {# attempt} other {# attempts}} blocked)."
+        },
+        "guessing": {
+          "title": "Passwords being guessed",
+          "body": "{count} wrong passwords for {subject} in the last day."
+        },
+        "codes": {
+          "title": "Wrong two-step codes",
+          "body": "{count} wrong codes from the address {subject} in the last day."
+        },
+        "google": {
+          "title": "Google sign-in refused",
+          "body": "A Google sign-in from the address {subject} was refused ({count, plural, one {# time} other {# times}}). The account is not registered or uses a code."
+        }
+      }
+    },
+    "sessions": {
+      "title": "Where people are signed in",
+      "description": "Every place that is signed in to the system right now: the person, the device, the address and when. Sign a place out if you do not recognise it.",
+      "none": "Nobody is signed in.",
+      "count": "{count, plural, one {# place} other {# places}}",
+      "unknown": "Unknown device",
+      "thisOne": "This device",
+      "owner": "Owner",
+      "desktop": "Computer",
+      "phone": "Phone",
+      "address": "Address",
+      "signedIn": "Signed in",
+      "lastSeen": "Last active",
+      "signOut": "Sign out",
+      "confirm": "Sign this place out? {name} will have to sign in again.",
+      "failed": "Could not sign out that place. Please try again.",
+      "hint": "People are also signed out by themselves after the time set below, or after 12 hours. Past sign-ins are in the activity log.",
+      "ended": "Signed out from that place.",
+      "cancel": "Cancel"
+    },
+    "messages": {
+      "title": "Messages",
+      "subtitle": "Questions, requests, problems and suggestions from the people who use the system.",
+      "count": "{count, plural, one {# message} other {# messages}}",
+      "filters": {
+        "new": "New",
+        "done": "Answered",
+        "all": "All"
+      },
+      "empty": "No messages here.",
+      "from": "From",
+      "about": "About",
+      "urgent": "Urgent",
+      "page": "Sent from the page",
+      "answer": "Your answer (the sender will read it)",
+      "answerPlaceholder": "Optional",
+      "markDone": "Mark as done",
+      "saving": "Saving…",
+      "saved": "Marked as done.",
+      "failed": "Could not save. Try again.",
+      "handled": "Answered by {name}",
+      "helperOn": "The question helper is on.",
+      "helperOff": "The question helper is off. To turn it on, add ANTHROPIC_API_KEY in the server settings (Render, Environment)."
+    }
+  },
+  "settings": {
+    "logo": {
+      "title": "Company logo",
+      "description": "One logo for the whole system, shown in the side menu, the phone bar and the sign-in page. The interface uses it in three forms.",
+      "variants": {
+        "light": {
+          "name": "Light logo",
+          "hint": "For dark areas: the side menu and the sign-in page."
+        },
+        "full": {
+          "name": "Dark logo",
+          "hint": "For light backgrounds, such as labels and reports."
+        },
+        "mark": {
+          "name": "Mark",
+          "hint": "The small symbol: collapsed menu and phone bar."
+        }
+      },
+      "original": "Original",
+      "custom": "Replaced",
+      "upload": "Upload new",
+      "uploading": "Uploading…",
+      "restore": "Restore original",
+      "rules": "PNG, JPG or WebP, up to 1 MB. A transparent background suits the light logo best.",
+      "readOnly": "You can see the logo but not change it.",
+      "errors": {
+        "INVALID_TYPE": "This file is not a PNG, JPG or WebP image.",
+        "TOO_LARGE": "The file is larger than 1 MB.",
+        "EMPTY": "No file was chosen.",
+        "NOT_ALLOWED": "You do not have permission to change the logo.",
+        "GENERIC": "The logo could not be changed. Please try again."
+      }
+    },
+    "priority": {
+      "title": "Priority connection",
+      "description": "How the system reaches Priority for items, stock and receiving.",
+      "mode": "Mode",
+      "modeLive": "Live connection to Priority",
+      "modeFake": "Stand-in with sample data",
+      "address": "API address",
+      "user": "API user",
+      "password": "Password",
+      "passwordSaved": "Saved",
+      "notSet": "Not set",
+      "liveNote": "The practice stand-in answers every request, and nothing reaches the real Priority. The details here are kept (the key and password encrypted) so the real Priority can be checked with the data check below, which only reads.",
+      "test": "Test connection",
+      "testing": "Testing…",
+      "testOk": "Connected to the stand-in: {count, plural, one {# warehouse} other {# warehouses}} in {ms} ms.",
+      "edit": "Edit connection",
+      "editTitle": "Priority connection",
+      "editDescription": "The details the system uses to connect to Priority.",
+      "addressHint": "The address of Priority's API, starting with https:// or http://.",
+      "passwordHint": "Stored encrypted and never shown again.",
+      "passwordKeep": "Leave empty to keep the saved password",
+      "passwordRemove": "Remove the saved password",
+      "cancel": "Cancel",
+      "save": "Save",
+      "saving": "Saving…",
+      "saved": "Connection details saved",
+      "errors": {
+        "INVALID_URL": "The address is not valid. Start it with https:// or http://.",
+        "INVALID_INPUT": "Check the fields and try again.",
+        "NOT_ALLOWED": "You do not have permission for this.",
+        "UNAVAILABLE": "The stand-in is set to not answering, so the test failed. Change it to Normal below.",
+        "GENERIC": "Something went wrong. Please try again."
+      },
+      "key": "Access key",
+      "keySaved": "A key is saved",
+      "keyKeep": "Leave empty to keep the saved key",
+      "keyHint": "The key Priority gave you. It is stored encrypted and is never shown again; no one can read it back from this screen.",
+      "keyRemove": "Remove the saved key",
+      "liveNoteLive": "The system is connected to the real Priority: it reads items, stock and orders from it and sends every box it receives. The key and the password are stored encrypted and are never shown again."
+    },
+    "labelsCard": {
+      "title": "Label layouts",
+      "description": "Design item labels and box labels at any size, with the fields you choose.",
+      "count": "{count, plural, one {# layout} other {# layouts}}",
+      "open": "Open the label designer"
+    },
+    "standIn": {
+      "title": "Stand-in control",
+      "description": "Try the system when Priority is slow or not answering. This affects only the stand-in; the real Priority is never touched.",
+      "modes": {
+        "normal": {
+          "name": "Normal",
+          "hint": "Answers at once."
+        },
+        "slow": {
+          "name": "Slow",
+          "hint": "Waits {seconds} seconds before every answer."
+        },
+        "down": {
+          "name": "Not answering",
+          "hint": "Every request fails, as if Priority were off."
+        }
+      },
+      "changed": "Stand-in behaviour changed",
+      "failed": "The behaviour could not be changed.",
+      "readOnly": "You can see the behaviour but not change it."
+    },
+    "groups": {
+      "menu": "Settings groups",
+      "company": {
+        "title": "Company and labels",
+        "hint": "Logo and label layouts",
+        "description": "The company logo used across the system, the layouts of the labels that are printed, and the shipping labels."
+      },
+      "priority": {
+        "title": "Priority",
+        "hint": "Connection and data check",
+        "description": "How the system reaches Priority, a check of what Priority answers, and the stand-in used for practice."
+      },
+      "receiving": {
+        "title": "Receiving",
+        "hint": "Storage rooms, alerts, vendor order",
+        "description": "Where received boxes are stored, when the dashboard warns about expiry, and the order vendor boxes are received under."
+      },
+      "hardware": {
+        "title": "Scale",
+        "hint": "Scale",
+        "description": "Connecting and disconnecting the scale of this computer."
+      }
+    },
+    "coming": {
+      "title": "Coming next",
+      "subtitle": "These sections are built in the next phases.",
+      "phase": "Phase {phase}"
+    },
+    "sections": {
+      "labels": {
+        "title": "Label designer",
+        "description": "Design item labels and box labels at any size, with the fields you choose."
+      },
+      "hardware": {
+        "title": "Scale and printer",
+        "description": "Connect the scale and choose the printers for each computer."
+      },
+      "categories": {
+        "title": "Storage rooms and alerts",
+        "description": "The default storage room for each item category, and how many days before expiry the dashboard warns."
+      },
+      "vendorOrder": {
+        "title": "Vendor receiving order",
+        "description": "The fixed order number used when vendor boxes are received."
+      }
+    },
+    "categoryWarehouses": {
+      "title": "Storage rooms and expiry alerts",
+      "description": "For each category: how many days before expiry a box counts as expiring soon (without a number, {days} days), the storage room its received boxes go into (without a choice, {warehouse}), and the storage text its labels print when Priority has none for the item.",
+      "choose": "Storage room for {category}",
+      "automatic": "Automatic ({warehouse})",
+      "uncategorized": "No category",
+      "items": "{count, plural, one {# item} other {# items}}",
+      "saved": "Storage room saved",
+      "empty": "There are no categories yet.",
+      "unavailable": "Priority is not answering, so the choices cannot be changed now. Only the ones already made are shown.",
+      "alertDays": "Alert days",
+      "alertDaysFor": "Alert days for {category}",
+      "invalidDays": "Enter a whole number of days from 1 to 365.",
+      "daysSaved": "Alert days saved",
+      "storageText": "Storage text on the labels",
+      "storageTextFor": "Storage text for {category}",
+      "storagePlaceholder": "For example: Keep frozen at -18°C. Do not refreeze after thawing.",
+      "storageSaved": "Storage text saved",
+      "storageTooLong": "The storage text can be up to 300 characters.",
+      "shelfLife": "Days to expiry",
+      "shelfLifeFor": "Days from slaughter to expiry for {category}",
+      "shelfLifeSaved": "Days to expiry saved",
+      "invalidShelfLife": "Enter a whole number of days from 1 to 3650."
+    },
+    "vendorOrderCard": {
+      "title": "Vendor receiving order",
+      "description": "The one Priority order all vendor boxes are received under. Choose one from the list, or type any order number you want. Without a choice, the vendor order is used when Priority has exactly one.",
+      "label": "Order",
+      "automatic": "Automatic",
+      "saved": "Vendor order saved",
+      "unavailable": "Priority is not answering, so the order cannot be changed now. The one already chosen is shown.",
+      "customLabel": "Or type any order number",
+      "customHint": "From now on, vendor boxes are received under this number. The order must exist and be open in Priority; if it does not, the boxes wait in “Sends to Priority”.",
+      "customPlaceholder": "For example AS26000099",
+      "customSave": "Use this number",
+      "now": "Now: {docno}",
+      "notListed": "Saved. Priority does not list this number right now, so check it: until the order exists and is open, the boxes wait in “Sends to Priority”."
+    },
+    "receivingErrors": {
+      "NOT_ALLOWED": "You do not have permission for this.",
+      "INVALID_INPUT": "Check the choice and try again.",
+      "UNAVAILABLE": "Priority is not answering. Try again in a moment.",
+      "UNKNOWN": "Priority does not have that any more. Refresh the page.",
+      "GENERIC": "Something went wrong. Please try again.",
+      "INVALID_ORDER": "The order number can have letters, digits, dots, dashes and underscores, up to 40 characters."
+    },
+    "priorityCheck": {
+      "title": "Priority data check",
+      "description": "Asks the real Priority which forms and fields it has, so the system reads exactly what is there. Reads only: nothing is changed in Priority.",
+      "notConfigured": "Enter the address and the access key above first (Change connection).",
+      "checkAll": "Check {forms}",
+      "checking": "Checking…",
+      "another": "Other forms (separate several with commas)",
+      "checkOne": "Check",
+      "listHelp": "Simplest: press once and copy the list to me. Then I find where everything is in Priority myself.",
+      "listForms": "Show all screens Priority allows",
+      "listRefused": "Priority did not answer the request. Try again in a few minutes.",
+      "copyList": "Copy the list ({count})",
+      "itemNumber": "A specific item number (to see a real item)",
+      "checkItem": "Show this item",
+      "copy": "Copy the results",
+      "copied": "Copied. Paste it into your message.",
+      "copyFailed": "Could not copy. Select the text and copy it yourself.",
+      "fieldsFound": "{count, plural, one {# field} other {# fields}}",
+      "noAnswer": "No answer",
+      "time": "{ms} ms",
+      "errors": {
+        "NOT_CONFIGURED": "The address or the access key is missing. Enter them above first.",
+        "NOT_ALLOWED": "You do not have permission for this.",
+        "INVALID_INPUT": "Check the form name and try again.",
+        "INVALID_URL": "The address is not valid.",
+        "UNAVAILABLE": "Priority is not answering. Try again in a moment.",
+        "GENERIC": "Something went wrong. Please try again.",
+        "COOLDOWN": "Priority refused a moment ago, so it is being left alone for {minutes, plural, one {# more minute} other {# more minutes}} to avoid locking the account. Try again then, or save a different key to try at once."
+      },
+      "skipped": "Not asked",
+      "skippedWhy": "Left alone after Priority's refusal, so the account is not locked further.",
+      "refusal": {
+        "AUTH_FAILED": "Priority does not accept this key. Check the key and how it is sent. Priority is left alone for 10 minutes, because every wrong try counts toward locking the account.",
+        "RATE_LIMITED": "Priority has locked the account after too many failed sign-ins. Do not try again now: wait, and ask your provider when it unlocks. Priority is left alone for 30 minutes."
+      },
+      "findTexts": "Find all of this item's texts",
+      "writeHelp": "Asks Priority whether this key may write. It sends one request that cannot create anything, and shows Priority's answer.",
+      "checkWrite": "Check writing",
+      "testBoxHelp": "A real test: adds one small line (0.01 kg, barcode starting ZZTEST) to this open order in Priority, the way every box is recorded. Use it once, then delete that line in Priority.",
+      "testDoc": "Document number",
+      "sendTestBox": "Send one test box",
+      "testItem": "Item number"
+    },
+    "scaleCard": {
+      "title": "Scale",
+      "description": "Connect this computer's scale to the system, or disconnect it so the old program can use it. The receiving screen uses the scale connected here.",
+      "weight": "Weight now"
+    },
+    "packaging": {
+      "title": "Packaging type",
+      "description": "What one empty packaging weighs. Chosen for each item in the catalog; taken off the scale weight.",
+      "example": "Carton 15 kg",
+      "none": "None yet.",
+      "name": "Name",
+      "weight": "Weight (kg)",
+      "add": "Add",
+      "added": "Added.",
+      "saved": "Saved.",
+      "deleted": "{count, plural, =0 {Deleted.} one {Deleted. One item used it and now has none.} other {Deleted. # items used it and now have none.}}",
+      "nameOf": "Name of {name}",
+      "weightOf": "Weight of {name}, in kilograms",
+      "saveOf": "Save {name}",
+      "deleteOf": "Delete {name}",
+      "confirmDelete": "Delete? Items using it will have none.",
+      "yesDelete": "Delete",
+      "cancel": "Cancel",
+      "errors": {
+        "INVALID_NAME": "Enter a name of up to 60 characters.",
+        "INVALID_WEIGHT": "Enter the weight in kilograms, from 0 to 20.",
+        "NOT_FOUND": "This packaging type no longer exists.",
+        "TOO_MANY": "There are too many packaging types.",
+        "NOT_ALLOWED": "You do not have permission for this.",
+        "INVALID_INPUT": "Check the fields.",
+        "UNAVAILABLE": "Priority is not answering.",
+        "UNKNOWN": "This no longer exists.",
+        "GENERIC": "Something went wrong. Please try again.",
+        "INVALID_ORDER": "The order number can have letters, digits, dots, dashes and underscores, up to 40 characters."
+      }
+    },
+    "shippingCard": {
+      "title": "Shipping labels",
+      "description": "Priority sends each order here once it is picked and confirmed there. This system only prints the labels; it picks nothing.",
+      "urlLabel": "The address to give Priority",
+      "copy": "Copy",
+      "copied": "Copied",
+      "copyFailed": "Could not copy. Select the address and copy it by hand.",
+      "urlHint": "Give this address to whoever sets up Priority. Priority calls it for every order it picks and confirms (POST, with the order details). The key inside it is the password: do not share it anywhere else.",
+      "urlHidden": "Only people who may change the label settings can see the address.",
+      "keyTitle": "The key in the address",
+      "keyHint": "If the address reached someone it should not, make a new one. Then give Priority the new address.",
+      "keyNew": "Make a new address",
+      "keyConfirm": "Yes, make a new one",
+      "keyWarning": "The old address stops working at once, and Priority will not be able to send orders until it is given the new one.",
+      "keyChanged": "A new address was made. Copy it and give it to Priority: the old one no longer works.",
+      "cancel": "Cancel",
+      "layoutLabel": "Label layout",
+      "layoutFirst": "The first shipping layout",
+      "countLabel": "Number of boxes or pallets to start from",
+      "countHint": "The number shown when you print an order's labels. If Priority sends the number of boxes, that number is shown instead. A box gets one label. A pallet gets several (the number above, 4 to start with), all with the same number: with 10 pallets and 4 labels each, Pallet 1 of 10 prints four times, then Pallet 2 of 10 four times, and so on. You can change all of this before printing.",
+      "save": "Save",
+      "saved": "Saved.",
+      "designer": "Design the shipping label",
+      "test": "Make a test order",
+      "testMade": "A test order (TEST-0001) was added to the Shipping labels list.",
+      "statusTitle": "From Priority",
+      "statusNone": "No order has arrived from Priority yet.",
+      "statusSome": "{count, plural, one {# order has} other {# orders have}} arrived from Priority. The last one came on {when}.",
+      "namesTitle": "The details Priority can send",
+      "namesIntro": "Priority can send each detail under any of these names (capitals do not matter). Only the order number is required. Anything else it sends is kept but not printed.",
+      "names": {
+        "orderNumber": "Order number",
+        "customerName": "Customer name",
+        "customerNumber": "Customer number",
+        "address": "Address",
+        "city": "City",
+        "phone": "Phone",
+        "shipDate": "Shipping date",
+        "notes": "Notes",
+        "labelCount": "Number of labels (boxes)"
+      },
+      "required": "required",
+      "namesExample": "For example, in JSON:",
+      "unitLabel": "The labels are for (to start from)",
+      "units": {
+        "box": "Boxes",
+        "pallet": "Pallets"
+      },
+      "open": "Open the settings",
+      "close": "Close",
+      "copiesLabel": "Labels for each pallet"
+    },
+    "shippingErrors": {
+      "NOT_ALLOWED": "You are not allowed to do this.",
+      "INVALID_INPUT": "The details are not valid.",
+      "INVALID_COUNT": "The number of labels must be a whole number from 1 to 200.",
+      "INVALID_LAYOUT": "Choose a shipping label layout from the list.",
+      "GENERIC": "Something went wrong. Try again.",
+      "INVALID_COPIES": "The labels for each pallet must be a whole number from 1 to 10."
+    }
+  },
+  "labels": {
+    "title": "Label layouts",
+    "subtitle": "Design the labels the system prints. Every layout has its own size, typed in millimetres.",
+    "back": "Back to settings",
+    "types": {
+      "item": "Item label",
+      "box": "Box label",
+      "pallet": "Pallet label",
+      "shipping": "Shipping label"
+    },
+    "typeHints": {
+      "item": "One per bag or tray, printed from the catalog.",
+      "box": "The one label every weighed box gets. There is only one.",
+      "pallet": "A summary label for a pallet, on any printer.",
+      "shipping": "For an order picked in Priority: one label for each box, numbered 1 / 10, 2 / 10 and so on."
+    },
+    "list": {
+      "new": "New layout",
+      "empty": "There are no layouts yet.",
+      "count": "{count, plural, one {# layout} other {# layouts}}",
+      "columns": {
+        "name": "Name",
+        "type": "Type",
+        "size": "Size",
+        "elements": "Elements",
+        "updated": "Last changed"
+      },
+      "unit": "mm",
+      "elements": "{count, plural, one {# element} other {# elements}}",
+      "open": "Open {name}",
+      "duplicate": "Duplicate {name}",
+      "delete": "Delete {name}",
+      "default": "Default",
+      "makeDefault": "Make {name} the default item label",
+      "clearDefault": "Stop {name} being the default",
+      "defaultSet": "{name} is now chosen first when printing",
+      "defaultCleared": "No item label is chosen first now"
+    },
+    "create": {
+      "title": "New layout",
+      "description": "Choose a name, the kind of label and its size. Any size works; there are no preset templates.",
+      "name": "Name",
+      "type": "Kind of label",
+      "boxTaken": "A box label layout already exists.",
+      "width": "Width (mm)",
+      "height": "Height (mm)",
+      "submit": "Create and open",
+      "cancel": "Cancel"
+    },
+    "confirmDelete": {
+      "title": "Delete this layout?",
+      "body": "“{name}” will be deleted. This cannot be undone.",
+      "action": "Delete layout",
+      "cancel": "Cancel"
+    },
+    "errors": {
+      "NAME_TAKEN": "Another layout already has this name.",
+      "BOX_EXISTS": "There is only one box label layout.",
+      "NOT_FOUND": "This layout no longer exists.",
+      "NOT_ALLOWED": "You do not have permission for this.",
+      "INVALID_INPUT": "Check the name and the size: each side must be between 10 and 300 mm.",
+      "GENERIC": "Something went wrong. Please try again."
+    },
+    "editor": {
+      "readOnly": "You can look at this layout but not change it.",
+      "save": "Save",
+      "saving": "Saving…",
+      "saved": "Layout saved",
+      "unsaved": "Unsaved changes",
+      "undo": "Undo",
+      "redo": "Redo",
+      "zoomIn": "Larger",
+      "zoomOut": "Smaller",
+      "canvas": "{name}: {width} by {height} millimetres",
+      "add": "Add to the label",
+      "addText": "Text",
+      "addField": "Field",
+      "addLine": "Line",
+      "addBox": "Box",
+      "addBarcode": "Barcode",
+      "addQr": "QR code",
+      "addLogo": "Logo",
+      "testPrint": "Test print",
+      "qrSources": {
+        "itemLabel": "The whole item label",
+        "boxBarcode": "Box barcode digits",
+        "itemBarcode": "Item barcode",
+        "pallet": "The pallet's code"
+      },
+      "logoVariants": {
+        "full": "Full logo",
+        "mark": "Mark"
+      },
+      "layers": "Elements on the label",
+      "noElements": "The label is empty. Add text, a field, a line or a box.",
+      "elementOf": "{kind}: {detail}",
+      "label": "Label",
+      "name": "Name",
+      "width": "Width (mm)",
+      "height": "Height (mm)",
+      "previewItem": "Preview with item",
+      "previewHint": "Only for this screen; nothing is saved.",
+      "selected": "Selected element",
+      "nothingSelected": "Click an element on the label to change it, or press Ctrl+A to choose them all.",
+      "kinds": {
+        "text": "Text",
+        "field": "Field",
+        "line": "Line",
+        "box": "Box",
+        "barcode": "Barcode",
+        "qr": "QR code",
+        "logo": "Logo",
+        "lines": "Lines box"
+      },
+      "props": {
+        "x": "From the left (mm)",
+        "y": "From the top (mm)",
+        "w": "Width (mm)",
+        "h": "Height (mm)",
+        "text": "Text",
+        "field": "Shows",
+        "font": "Typeface",
+        "size": "Size (pt)",
+        "bold": "Bold",
+        "align": "Alignment",
+        "dir": "Language of the text",
+        "border": "Border (mm)",
+        "thickness": "Thickness (mm)",
+        "showText": "Show the digits under the bars",
+        "qrSource": "The QR code holds",
+        "logoVariant": "Which logo",
+        "duplicate": "Duplicate",
+        "delete": "Delete",
+        "lines": {
+          "title": "Lines",
+          "frame": "Frame (mm, 0 = none)",
+          "radius": "Rounded corners (mm)",
+          "separator": "Between the lines",
+          "separators": {
+            "none": "Nothing",
+            "dotted": "Dotted",
+            "solid": "Solid"
+          },
+          "line": "Line {number}",
+          "label": "Words before the value",
+          "source": "Shows",
+          "sourceText": "A text typed here",
+          "text": "Text",
+          "add": "Add a line",
+          "remove": "Remove line {number}",
+          "up": "Move line {number} up",
+          "down": "Move line {number} down"
+        }
+      },
+      "fonts": {
+        "sans": "Heebo",
+        "serif": "Frank Ruhl",
+        "mono": "Mono",
+        "assistant": "Assistant",
+        "rubik": "Rubik",
+        "alef": "Alef",
+        "open-sans": "Open Sans",
+        "noto-sans-hebrew": "Noto Sans Hebrew",
+        "noto-serif-hebrew": "Noto Serif Hebrew",
+        "plex-sans-hebrew": "IBM Plex Sans Hebrew",
+        "arimo": "Arimo",
+        "tinos": "Tinos",
+        "david-libre": "David Libre",
+        "miriam-libre": "Miriam Libre",
+        "secular-one": "Secular One",
+        "suez-one": "Suez One",
+        "varela-round": "Varela Round",
+        "fredoka": "Fredoka",
+        "karantina": "Karantina",
+        "amatic-sc": "Amatic SC",
+        "bellefair": "Bellefair",
+        "playpen-sans-hebrew": "Playpen Sans Hebrew",
+        "gveret-levin": "Gveret Levin"
+      },
+      "aligns": {
+        "start": "Start",
+        "center": "Center",
+        "end": "End",
+        "spread": "Spread across"
+      },
+      "dirs": {
+        "auto": "Automatic",
+        "rtl": "Hebrew",
+        "ltr": "English"
+      },
+      "fieldGroups": {
+        "item": "From the item in Priority",
+        "label": "Printed with the label"
+      },
+      "newText": "Text",
+      "multiple": "{count} elements",
+      "multipleHint": "Move them together with the arrow keys or by dragging one. Copy them with Ctrl+C, or delete them with the Delete key.",
+      "layersHint": "Up and Down walk the list. Shift with them (or a click) chooses several.",
+      "keys": {
+        "title": "Keyboard",
+        "show": "Show the keys",
+        "tab": {
+          "keys": "Tab",
+          "does": "Next element (Shift+Tab: the one before)"
+        },
+        "selectAll": {
+          "keys": "Ctrl+A",
+          "does": "Choose all the elements"
+        },
+        "multiple": {
+          "keys": "Shift + click",
+          "does": "Add an element to the choice, or take it out (Ctrl + click does the same)"
+        },
+        "layers": {
+          "keys": "Shift + Up / Down",
+          "does": "In the list of elements: choose several in a row"
+        },
+        "move": {
+          "keys": "Arrow keys",
+          "does": "Move what is chosen by 0.5 mm (with Shift: 5 mm)"
+        },
+        "delete": {
+          "keys": "Delete",
+          "does": "Delete what is chosen (Backspace does the same)"
+        },
+        "copy": {
+          "keys": "Ctrl+C / X / V",
+          "does": "Copy, cut and paste"
+        },
+        "duplicate": {
+          "keys": "Ctrl+D",
+          "does": "Duplicate what is chosen"
+        },
+        "undo": {
+          "keys": "Ctrl+Z / Ctrl+Y",
+          "does": "Undo and redo"
+        },
+        "save": {
+          "keys": "Ctrl+S",
+          "does": "Save the layout"
+        },
+        "clear": {
+          "keys": "Esc",
+          "does": "Choose nothing"
+        }
+      },
+      "addSections": "Ready-made sections",
+      "addBasics": "Basic elements",
+      "sections": {
+        "dates": "Dates box",
+        "warning": "Warning box",
+        "lines": "Lines box",
+        "nameHe": "Item name (Hebrew)",
+        "nameEn": "Item name (English)",
+        "boxLabel": "Complete box label (name, weight, dates, barcode, storage)",
+        "boxLabelConfirm": "This replaces everything on the label with the complete box label. You can undo it with Ctrl+Z. Continue?"
+      },
+      "addDetails": "Every detail",
+      "addDetailsHint": "Press a detail to put it on the label.",
+      "detailGroups": {
+        "item": "Item details (from Priority)",
+        "label": "This label's details",
+        "pallet": "Pallet details",
+        "order": "Order details (sent by Priority)"
+      },
+      "centerAcross": "Center across the label",
+      "centerUpDown": "Center up and down"
+    },
+    "fields": {
+      "itemNumber": "Item number",
+      "name": "Name (Hebrew)",
+      "nameEn": "Name (English)",
+      "itemBarcode": "Item barcode",
+      "category": "Category",
+      "weightAvg": "Average carton weight",
+      "shelfLife": "Shelf life (days)",
+      "storageText": "Storage text",
+      "packingCode": "Package type",
+      "origin": "Country of origin",
+      "slaughterDate": "Slaughter date",
+      "productionDate": "Production date",
+      "expiryDate": "Expiry date",
+      "weightKg": "Weight (kg)",
+      "certificateNo": "Production certificate number",
+      "runningNumber": "Running number",
+      "boxBarcode": "Box barcode (digits)",
+      "palletNumber": "Pallet number",
+      "palletBoxes": "Boxes on the pallet",
+      "palletWeight": "Pallet weight (kg)",
+      "palletDate": "Pallet date",
+      "palletContents": "What is on the pallet",
+      "orderNumber": "Order number",
+      "customerName": "Customer name",
+      "customerNumber": "Customer number",
+      "address": "Address",
+      "city": "City",
+      "phone": "Phone",
+      "shipDate": "Shipping date",
+      "orderNotes": "Order notes",
+      "labelNumber": "Number of this label only (3)",
+      "labelCount": "Number of labels only (10)",
+      "labelOf": "This label out of all, with the word (Box 3 of 10)",
+      "unitName": "The word Box or Pallet"
+    }
+  },
+  "catalog": {
+    "searchLabel": "Search the catalog",
+    "searchPlaceholder": "Name, item number or barcode",
+    "categories": "Categories",
+    "uncategorized": "No category",
+    "count": "{count, plural, one {# item} other {# items}}",
+    "empty": "No item matches.",
+    "clear": "Show all items",
+    "unavailable": {
+      "title": "Priority is not answering",
+      "body": "The catalog cannot be shown right now. Nothing was lost. Try again in a moment."
+    },
+    "shelfLifeDays": "{days, plural, one {# day} other {# days}}",
+    "print": {
+      "title": "Print item label",
+      "fields": {
+        "slaughter": "Slaughter date",
+        "production": "Production date",
+        "certificate": "Production certificate number",
+        "expiry": "Expiry date",
+        "layout": "Label type",
+        "copies": "Copies",
+        "origin": "Country of origin"
+      },
+      "expiryHint": "The slaughter date plus the item's shelf life of {days, plural, one {# day} other {# days}}.",
+      "expiryUnknown": "Enter the slaughter date to see the expiry date.",
+      "preview": "What will print",
+      "previewIncomplete": "Sample values show until the form is complete.",
+      "previewChoose": "Choose a label type to see what will print.",
+      "submit": "Print",
+      "preparing": "Preparing…",
+      "cancel": "Cancel",
+      "noLayout": "There is no item label layout yet. Create one in System settings, under Label layouts.",
+      "problems": {
+        "SLAUGHTER_DATE": "Enter the slaughter date.",
+        "PRODUCTION_DATE": "Enter the production date.",
+        "DATES_ORDER": "The production date cannot be before the slaughter date.",
+        "CERTIFICATE": "Enter the production certificate number: one word of up to 30 characters, with no spaces or | sign.",
+        "COPIES": "Copies must be a whole number from 1 to {max}.",
+        "LAYOUT": "Choose the label type.",
+        "ORIGIN": "The country of origin can be up to {max} characters.",
+        "ORIGIN_MISSING": "Enter the country of origin."
+      },
+      "errors": {
+        "INVALID_INPUT": "Check the fields and try again.",
+        "NOT_ALLOWED": "You do not have permission for this.",
+        "UNAVAILABLE": "Priority is not answering, so the item cannot be checked now. Try again in a moment.",
+        "ITEM_NOT_FOUND": "This item is no longer in the catalog.",
+        "ITEM_NOT_PRINTABLE": "This item's number has a space or a | sign, so its QR code cannot be made. Fix the item in Priority.",
+        "LAYOUT_NOT_FOUND": "That layout no longer exists.",
+        "GENERIC": "Something went wrong. Please try again.",
+        "TOO_MANY": "That is too many labels at once. Print at most 1000 labels in one go."
+      },
+      "layoutHint": "Choose which label to print. Each type has its own size and design.",
+      "size": "{width} × {height}",
+      "originHint": "For example Poland"
+    },
+    "details": {
+      "readOnly": "Shown as Priority has it. Items are edited only in Priority.",
+      "fields": {
+        "itemNumber": "Item number",
+        "name": "Name (Hebrew)",
+        "nameEn": "Name (English)",
+        "barcode": "Item barcode",
+        "category": "Category",
+        "weight": "Average carton weight",
+        "shelfLife": "Shelf life",
+        "storage": "Storage text",
+        "packing": "Package type",
+        "origin": "Country of origin",
+        "inventoryManaged": "Inventory managed"
+      },
+      "notSet": "Not set",
+      "printLabel": "Print a label"
+    },
+    "allCategories": "All categories",
+    "allCategoriesAction": "All categories, {count} items: show every item",
+    "openCategory": "Show the {count, plural, one {# item} other {# items}} of {category}",
+    "listHint": "Items in the catalog (click a box to see all its details and print a label)",
+    "listHintReadOnly": "Items in the catalog",
+    "totalShown": "Total shown: {count}",
+    "itemNumberLabel": "Item no.:",
+    "openItem": "Open {name}",
+    "categoryDialog": {
+      "title": "Items in the category: {category}",
+      "found": "{count, plural, one {One item} other {# items}} found in this category.",
+      "close": "Close window",
+      "itemNumber": "#{number}"
+    },
+    "select": {
+      "start": "Print several items",
+      "cancel": "Stop selecting",
+      "hint": "Tap the items you want labels for, then press Print labels.",
+      "count": "{count, plural, one {# item selected} other {# items selected}}",
+      "selectItem": "Select {name}",
+      "clear": "Clear the choice",
+      "print": "Print labels",
+      "limit": "Up to {max} items at once."
+    },
+    "batch": {
+      "title": "Print labels for several items",
+      "description": "One label type for all of them. Each item has its own dates, certificate number and copies, and an empty label prints between one item and the next.",
+      "remove": "Take {name} out of this print",
+      "empty": "No items left to print.",
+      "summary": "{labels, plural, one {# label} other {# labels}} for {items, plural, one {# item} other {# items}}",
+      "summaryBlanks": ", plus {blanks, plural, one {# empty label} other {# empty labels}} between the items",
+      "itemProblem": "{error} ({item})",
+      "rowProblems": "Check the fields of this item."
+    },
+    "packaging": {
+      "label": "Packaging for weighing",
+      "none": "None: the scale weight is recorded as it is",
+      "hint": "Chosen from the list in the system settings. A box of this item is recorded at the scale weight less the weight of its packaging.",
+      "saved": "Saved."
+    }
+  },
+  "placeholder": {
+    "title": "Under construction",
+    "comingSoon": "This screen is built in phase {phase}",
+    "comingInStep": "This screen is built in step {step} of phase 1"
+  },
+  "welcome": {
+    "title": "Welcome",
+    "intro": "This is the skeleton of the new system. The menu, login and permissions come in the next steps.",
+    "directionCheck": "Screen direction: {direction}",
+    "rtl": "right to left",
+    "ltr": "left to right",
+    "sampleCardTitle": "Main Warehouse",
+    "sampleCardBody": "A sample warehouse card, as it will appear on the dashboard.",
+    "today": "Today: {date}",
+    "sampleWeight": "Sample weight: {weight} kg"
+  },
+  "receiving": {
+    "unavailable": {
+      "title": "Priority is not answering",
+      "body": "Nothing can be received until the item list has been read at least once. Nothing was lost. Try again in a moment."
+    },
+    "savedCatalog": "Priority is not answering. The items from the last time it answered are used, boxes are still saved and labelled, and they are sent to Priority automatically when it is back.",
+    "scanTitle": "1. Scan the box's label",
+    "scanLabel": "QR code on the item label",
+    "scanPlaceholder": "Scan the QR code…",
+    "manualButton": "No QR code: choose the item by hand",
+    "clear": "Clear",
+    "facts": {
+      "certificate": "Certificate number",
+      "slaughter": "Slaughter date",
+      "production": "Production date",
+      "expiry": "Expiry date",
+      "shelfLife": "Shelf life: {days} days",
+      "item": "Item scanned"
+    },
+    "waiting": "Scan the box's label to start.",
+    "weighTitle": "2. Weigh and save",
+    "autoPrint": "Print by itself about 2 seconds after the weight settles",
+    "save": "Save and print label",
+    "saving": "Saving…",
+    "enterHint": "Enter does the same as the button.",
+    "saved": "Saved: {name}, {weight} kg.",
+    "willSend": "Priority did not take it yet; it will be sent again by itself.",
+    "scale": {
+      "display": "Weight on the scale",
+      "none": "No weight",
+      "settling": "Settling…",
+      "stable": "Stable",
+      "simulated": "Weight (simulated scale)",
+      "simulatedHint": "The scale is not connected, so type the weight. To connect it, open System settings, Scale.",
+      "real": {
+        "states": {
+          "off": "Scale not connected: the weight is typed",
+          "connecting": "Connecting to the scale…",
+          "on": "Scale connected",
+          "error": "The scale could not be connected"
+        },
+        "connect": "Connect the scale",
+        "disconnect": "Disconnect the scale",
+        "busy": "Another program is using the scale (GetScale?). Close it and press Connect again.",
+        "failed": "The scale did not answer. Check the cable and press Connect again.",
+        "unsupported": "The scale can only be connected from Chrome or Edge on a secure address. Until then the weight is typed.",
+        "setup": "Scale setup and what it sends",
+        "speed": "Speed (baud rate)",
+        "reversed": "The scale sends the numbers reversed (XK3190-A12)",
+        "raw": "What the scale sent last",
+        "manage": "Connect it in System settings",
+        "notAllowed": "You are not allowed to connect or disconnect the scale."
+      },
+      "recorded": "Weight going into stock"
+    },
+    "picker": {
+      "title": "Choose the item",
+      "description": "Search, or open a category, and click the item in the box.",
+      "choose": "Choose {name} ({number})",
+      "cancel": "Cancel"
+    },
+    "manual": {
+      "pick": "Choose the item",
+      "change": "Change",
+      "item": "Item",
+      "slaughter": "Slaughter date",
+      "production": "Production date",
+      "certificate": "Production certificate number",
+      "use": "Use these details",
+      "back": "Back to scanning",
+      "problem": "Choose an item, enter both dates, and a certificate number of one word with no spaces or | sign."
+    },
+    "today": {
+      "title": "Boxes received today",
+      "note": "A view of what was saved here. It starts over every day at {time} and is not the inventory.",
+      "summary": "{count, plural, one {# box} other {# boxes}}, {weight} kg",
+      "empty": "No boxes yet.",
+      "emptyHint": "Scan a box, weigh it and print its label to start.",
+      "totalBoxes": "Boxes",
+      "totalWeight": "Total weight",
+      "time": "Time",
+      "item": "Item",
+      "running": "No.",
+      "barcode": "Box barcode",
+      "weight": "Weight",
+      "by": "By",
+      "state": "In Priority",
+      "states": {
+        "sent": "Sent",
+        "pending": "Waiting",
+        "failed": "Needs attention"
+      },
+      "reprint": "Reprint the label of {name}, number {running}",
+      "reprintShort": "Reprint"
+    },
+    "errors": {
+      "INVALID_INPUT": "Check the details and try again.",
+      "NOT_ALLOWED": "You do not have permission for this.",
+      "NOT_ITEM_QR": "This is not an item label's QR code. Scan the QR code on the label.",
+      "INVALID_WEIGHT": "Put the box on the scale: the weight must be between 0.01 and 99.99 kg.",
+      "INVALID_DATES": "The dates do not fit each other. Check the label.",
+      "UNKNOWN_ITEM": "This item is not in the catalog.",
+      "UNKNOWN_WAREHOUSE": "This storage room does not exist in Priority.",
+      "UNKNOWN_ORDER": "This order does not exist in Priority.",
+      "NO_ORDER": "There is no open production order for this item in Priority.",
+      "RUNNING_EXHAUSTED": "This item has used all 9999 box numbers.",
+      "PRIORITY_UNAVAILABLE": "Priority is not answering and there is no saved item list yet.",
+      "NO_BOX_LAYOUT": "There is no box label layout. Create it in System settings, under Label layouts.",
+      "BOX_NOT_FOUND": "This box is not in the system.",
+      "NOT_VENDOR": "This is not a vendor barcode (it must start with 38).",
+      "BAD_VENDOR_BARCODE": "This vendor barcode is not readable: it must be 30 digits. It may have been scanned only in part, so scan it again.",
+      "ITEM_NOT_FOUND": "No item matches this barcode.",
+      "AMBIGUOUS_ITEM": "More than one item matches this barcode.",
+      "ALREADY_RECEIVED": "This box was already received.",
+      "GENERIC": "Something went wrong. Please try again.",
+      "INVALID_ORDER": "The order number can have letters, digits, dots, dashes and underscores, up to 40 characters."
+    },
+    "packaging": {
+      "title": "Packaging weight",
+      "carton": "Packaging: {name}",
+      "taken": "− {weight} {kg}",
+      "recorded": "Recorded"
+    }
+  },
+  "vendor": {
+    "scanTitle": "Receive goods by scanning the vendor's barcode",
+    "scanLabel": "Vendor barcode on the box",
+    "scanPlaceholder": "Scan or type the vendor barcode…",
+    "hint": "Scan the barcode (it starts with 38) and the box is taken into stock by itself. High beep: recorded. Two low beeps: refused.",
+    "history": {
+      "title": "Vendor boxes received today",
+      "subtitle": "Grouped by catalog item. It starts over every day at {time}.",
+      "excel": "Excel",
+      "print": "Print",
+      "exportFailed": "The file could not be made. Try again.",
+      "itemNumber": "Item number:",
+      "digits": "7 digits:",
+      "expiry": "Expiry:",
+      "slaughter": "Slaughter:",
+      "emptyHint": "Scan a vendor barcode to receive a box.",
+      "columns": {
+        "itemNumber": "Item number",
+        "item": "Item",
+        "barcode": "Vendor barcode",
+        "weight": "Weight (kg)",
+        "slaughter": "Slaughter date",
+        "expiry": "Expiry date",
+        "received": "Received"
+      }
+    },
+    "saved": "Received: {name}, {weight} kg, expires {expiry}.",
+    "alreadyReceived": "This box was already received on {when} by {by}.",
+    "soundOn": "Scan sounds are on. Press to turn them off.",
+    "soundOff": "Scan sounds are off. Press to turn them on.",
+    "waiting": "{count} scans are waiting to be saved…",
+    "unreached": "Not recorded: the scan did not reach the system. Check the connection and press Retry.",
+    "problemsTitle": "Not recorded in the system",
+    "problemsClear": "Clear the list",
+    "retry": "Retry",
+    "dismiss": "Remove from the list"
+  },
+  "inventory": {
+    "title": "Inventory",
+    "unavailable": {
+      "title": "Priority is not answering",
+      "body": "The inventory cannot be shown right now. Nothing was lost. Try again in a moment."
+    },
+    "noStock": "There are no boxes in stock.",
+    "noMatch": "No box matches these filters.",
+    "filters": {
+      "item": "Item",
+      "itemPlaceholder": "Item number or name",
+      "warehouse": "Warehouse",
+      "allWarehouses": "All warehouses",
+      "status": "Expiry",
+      "statuses": {
+        "all": "All boxes",
+        "attention": "Expired or expiring soon",
+        "expired": "Expired",
+        "soon": "Expiring soon",
+        "valid": "In date"
+      },
+      "barcode": "Box barcode",
+      "expiry": "Expiry date",
+      "entered": "Date entered",
+      "from": "from",
+      "to": "to",
+      "clear": "Clear the filters",
+      "more": "More filters"
+    },
+    "rooms": {
+      "all": "All storage rooms"
+    },
+    "items": {
+      "title": "Items in stock ({count})",
+      "weight": "Total weight",
+      "boxes": "Boxes",
+      "rooms": "Storage room",
+      "boxList": "Boxes in stock ({count})"
+    },
+    "summary": {
+      "boxes": "{count, plural, one {# box} other {# boxes}}",
+      "expired": "{count, plural, one {# expired} other {# expired}}",
+      "soon": "{count, plural, one {# expiring soon} other {# expiring soon}}"
+    },
+    "status": {
+      "valid": "In date",
+      "soon": "Expiring soon",
+      "expired": "Expired"
+    },
+    "columns": {
+      "itemNumber": "Item number",
+      "item": "Item",
+      "category": "Category",
+      "warehouse": "Warehouse",
+      "barcode": "Box barcode",
+      "weight": "Weight (kg)",
+      "slaughter": "Slaughter date",
+      "expiry": "Expiry date",
+      "entered": "Entered",
+      "status": "Status"
+    },
+    "expiredAgo": "{count, plural, one {expired # day ago} other {expired # days ago}}",
+    "expiresToday": "expires today",
+    "expiresIn": "{count, plural, one {expires in # day} other {expires in # days}}",
+    "showMore": "Show more ({shown} of {total})",
+    "export": {
+      "excel": "Export to Excel",
+      "pdf": "Export to PDF"
+    },
+    "exportFailed": "The file could not be made. Try again.",
+    "report": {
+      "title": "Inventory report",
+      "date": "Date: {date}",
+      "filtered": "Only the boxes the filters show.",
+      "count": "{count} boxes in this report."
+    }
+  },
+  "pallets": {
+    "open": "Pallets",
+    "title": "Pallets",
+    "subtitle": "A pallet is one QR code for a group of boxes. It never changes stock.",
+    "scan": {
+      "title": "Open a pallet",
+      "label": "Pallet QR code",
+      "placeholder": "Scan a pallet's QR code…",
+      "hint": "Scan a pallet label, or type its number, to see every box on it."
+    },
+    "recent": {
+      "title": "Latest pallets",
+      "empty": "No pallets yet. Tick boxes in the inventory and make one.",
+      "pallet": "Pallet {number}",
+      "line": "{boxes, plural, one {# box} other {# boxes}}, {weight} kg, made {date} by {by}",
+      "open": "Open",
+      "openFor": "Open pallet {number}",
+      "print": "Print label",
+      "printFor": "Print the label of pallet {number}"
+    },
+    "detail": {
+      "title": "Pallet {number}",
+      "made": "Made {date} by {by}",
+      "boxes": "{count, plural, one {# box} other {# boxes}}",
+      "gone": "{count, plural, one {# no longer in stock} other {# no longer in stock}}",
+      "notInStock": "Not in stock",
+      "in": "In {warehouse}",
+      "expires": "Expires {date}",
+      "print": "Print label"
+    },
+    "create": {
+      "selected": "{count, plural, one {# box ticked} other {# boxes ticked}}",
+      "selectShown": "Tick the {count} shown",
+      "clear": "Clear ticks",
+      "create": "Make a pallet of {count}",
+      "making": "Making…",
+      "made": "Pallet {number} made with {count} boxes.",
+      "pick": "Add {barcode} to a pallet",
+      "column": "Pallet",
+      "scan": {
+        "title": "Scan boxes",
+        "hint": "Scan each box with the scanner; it is added to the pallet.",
+        "label": "Box barcode",
+        "placeholder": "Scan a box",
+        "added": "Added: {name}, {weight} kg",
+        "again": "{name} was already scanned.",
+        "unknown": "{barcode} is not a box in stock.",
+        "full": "A pallet holds at most {max} boxes.",
+        "remove": "Take {name} off the pallet"
+      },
+      "title": "Build a pallet",
+      "picked": "Boxes on the pallet",
+      "tick": {
+        "title": "Tick in the list",
+        "hint": "Tick boxes in the list below, or tick all the boxes shown."
+      },
+      "start": "Build a pallet",
+      "cancel": "Cancel"
+    },
+    "errors": {
+      "NOTHING_SELECTED": "Tick at least one box first.",
+      "TOO_MANY": "A pallet holds up to 500 boxes.",
+      "NOT_IN_STOCK": "Some of these boxes are no longer in stock in Priority. Refresh the page and choose again.",
+      "NOT_FOUND": "There is no such pallet.",
+      "PRIORITY_UNAVAILABLE": "Priority is not answering, so the boxes cannot be checked. Try again in a moment.",
+      "NOT_ALLOWED": "You do not have permission for this.",
+      "INVALID_INPUT": "Check the boxes and try again.",
+      "NOT_A_PALLET": "This is not a pallet's QR code.",
+      "NO_PALLET_LAYOUT": "There is no pallet label layout. Create one in System settings, under Label layouts.",
+      "GENERIC": "Something went wrong. Please try again."
+    },
+    "back": "Back to the inventory",
+    "stat": {
+      "boxes": "Boxes",
+      "weight": "Total weight"
+    }
+  },
+  "rooms": {
+    "arrange": "Arrange the rooms",
+    "hint": "Drag each room to where you want it, or use the arrows. The order is kept for you only, on the dashboard and in the inventory. Every person arranges their own.",
+    "done": "Done",
+    "cancel": "Cancel",
+    "saved": "The order of the rooms was saved",
+    "saveFailed": "The order could not be saved. Try again.",
+    "earlier": "Move {name} earlier",
+    "later": "Move {name} later"
+  },
+  "account": {
+    "title": "My account",
+    "description": "Your password and your two-step verification.",
+    "twoFactor": {
+      "title": "Two-step verification",
+      "description": "After your password, you type a 6-digit code from an authenticator app on your phone. Someone who finds out your password still cannot sign in.",
+      "statusOn": "On: a code is asked after the password.",
+      "statusOff": "Off: the password alone signs you in.",
+      "turnOn": "Turn on",
+      "turnOff": "Turn off",
+      "newCodes": "New backup codes",
+      "passwordLabel": "Type your password to continue",
+      "continue": "Continue",
+      "cancel": "Cancel",
+      "stepInstall": "Install an authenticator app on your phone (Google Authenticator, Microsoft Authenticator or similar).",
+      "stepScan": "In the app, add an account and scan this picture, or type the key by hand.",
+      "stepType": "Type the 6-digit code the app shows, then press Confirm.",
+      "qrLabel": "Picture to scan with the authenticator app",
+      "manual": "Or type this key in the app:",
+      "codeLabel": "6-digit code",
+      "confirm": "Confirm and turn on",
+      "backupTitle": "Backup codes",
+      "backupHint": "Save these codes somewhere safe. Each works once, if you lose your phone. They will not be shown again.",
+      "done": "I saved them",
+      "turnedOn": "Two-step verification is on.",
+      "turnedOff": "Two-step verification is off.",
+      "problems": {
+        "password": "The password is wrong.",
+        "code": "The code is wrong. Check the app and try again.",
+        "generic": "Something went wrong. Please try again."
+      }
+    },
+    "password": {
+      "title": "Password",
+      "description": "Change the password you sign in with. You stay signed in here; other places are signed out.",
+      "change": "Change password"
+    }
+  },
+  "help": {
+    "open": "How this page works",
+    "close": "Close",
+    "about": "About this page",
+    "purposeTitle": "What this page is for",
+    "stepsTitle": "How it works",
+    "tipsTitle": "Good to know",
+    "pages": {
+      "dashboard": {
+        "title": "Dashboard",
+        "purpose": "The factory at a glance: how much stock there is, in which warehouse, and which boxes have expired or are about to.",
+        "steps": "The four tiles at the top show the total weight, the number of boxes, the number of different items and the boxes that need attention.\nPress the tile “Need attention” to see every item that has expired or soon-to-expire boxes, and open an item to see its boxes.\nEach warehouse has its own card: its weight, boxes and items, and a bar showing how many boxes are in date (green), expiring soon (amber) or expired (red).\nPress the line “items need attention” on a card to see the items and boxes of that warehouse.\nPress “Refresh data from Priority” to read the stock again now; otherwise it is read at most once a minute.\nPress “Arrange the rooms” to put the warehouse cards in the order you want. The order is kept for you only: every person arranges their own.",
+        "tips": "How many days before expiry counts as “soon” is set per category in System settings, under Receiving.\nIf Priority does not answer, nothing is lost: try again in a moment."
+      },
+      "catalog": {
+        "title": "Item catalog",
+        "purpose": "All the items from Priority. Look an item up here and print its label. Items are created and changed only in Priority.",
+        "steps": "Type a name (Hebrew or English), an item number or a barcode in the search box. The list narrows as you type.\nPress a category card to see its items in a window. “All categories” shows everything.\nPress an item to open its details: numbers, names, shelf life, storage text, package type and country of origin.\nIn the item window press “Print a label”: choose the label type, type the slaughter date and the production certificate number, check the country of origin and the copies, and press “Print”.\nTo print labels for many items at once press “Print several items”, tap the items, and press “Print labels”.",
+        "tips": "The expiry date on the label is calculated for you: the slaughter date plus the item’s shelf life.\nThe production certificate number is the number of the open order in Priority that the boxes will be received under.\nIf an item is weighed in a carton, choose its packaging in the item window (if you have permission); the receiving screen takes the packaging weight off."
+      },
+      "receiving": {
+        "title": "Goods receiving",
+        "purpose": "Receive the boxes made in the factory: scan the item label, put the box on the scale and save. The system saves the box, prints its label and sends it to Priority.",
+        "steps": "Scan the QR code on the item label in the scan box (the cursor is already there). The item, its dates and its certificate number fill in. Check them against the box.\nNo QR code? Press “No QR code: choose the item by hand”, find the item, and fill in the dates and the certificate number.\nPut the box on the scale and wait until the display says “Stable”. If the scale is not connected, type the weight.\nPress “Save and print label” (or press Enter). The box label prints and the box appears in today’s list.\nIn the list “Boxes received today” check that every box shows “Sent”. “Waiting” means Priority has not taken it yet and the system will try again by itself.",
+        "tips": "The production certificate number is the number of the open order in Priority that the box is received under.\nSwitch on “Print by itself about 2 seconds after the weight settles” to save and print without pressing anything.\nPress “Reprint” next to a box to print its label again."
+      },
+      "vendor": {
+        "title": "Vendor receiving",
+        "purpose": "Receive boxes that come with the vendor’s own barcode (it starts with 38). No label is printed.",
+        "steps": "Scan the vendor barcode in the scan box, or type it and press Enter.\nThe system reads the item, the dates and the weight from the barcode, saves the box and sends it to Priority.\nA green line shows what was received. The cursor stays in the scan box, so scan the next box right away: scans wait in line, so none is lost.\nListen to the sound: one high beep means recorded; two low beeps mean refused (the screen says why, for example already received); a long low buzz means the scan did not reach the system, and it is listed with a Retry button.\nThe list below shows today’s vendor boxes grouped by item. Use “Excel” or “Print” to take it out.",
+        "tips": "The speaker button next to the scan box turns the sounds off or on, on this computer only.\nThe list starts over every day at 21:00.\nAll vendor boxes are received under the vendor order chosen in System settings, under Receiving."
+      },
+      "inventory": {
+        "title": "Inventory management",
+        "purpose": "Every box that Priority holds in stock, down to the single box: filter, look, export reports and build pallets. It never changes stock.",
+        "steps": "Press a storage room card to see only that room. The first card shows all rooms.\nType an item number or name in the search box. Open “More filters” for the expiry status, a box barcode, and date ranges for expiry and entry.\nPress an item to see its boxes beside it, the ones expiring first on top. Red means expired and amber means expiring soon.\nPress “Export to Excel” or “Export to PDF” to take out exactly what the filters show.\nPress “Build a pallet” to group boxes under one number (see the Pallets page).",
+        "tips": "“Entered” is the day the box was received in this system. For older stock it is the date Priority has.\nThe list shows 100 boxes at a time. Press “Show more” for the rest."
+      },
+      "pallets": {
+        "title": "Pallets",
+        "purpose": "Pallets: a fixed group of boxes under one number and one QR code. Making a pallet never changes stock.",
+        "steps": "Scan a pallet’s QR code, or type its number, to see every box on it.\nFor each box you see where it is now and when it expires. A box that left the stock is greyed and marked “Not in stock”.\nBelow, the latest pallets: press “Open” to see one, or “Print label” to print its label again.\nTo make a new pallet go back to the inventory and press “Build a pallet”.",
+        "tips": "A pallet holds up to 500 boxes and can never be changed, so a printed number always means the same boxes."
+      },
+      "settingsCompany": {
+        "title": "Company and labels",
+        "purpose": "The company logo, the label layouts and the shipping labels.",
+        "steps": "Replace any of the three logos with “Upload new” (PNG, JPG or WebP, up to 1 MB). “Restore original” brings the first one back.\nPress “Open the label designer” to design the item, box, pallet and shipping labels.\nIn the card “Shipping labels” press “Open the settings” to see the address that Priority sends picked orders to, to choose the label layout and the number of labels to start from, and to make a test order.",
+        "tips": "Changes to a layout apply to the labels printed after you save it.\nThe address for Priority has a secret key inside it. “Make a new address” replaces the key; the old address then stops working."
+      },
+      "settingsPriority": {
+        "title": "Priority",
+        "purpose": "How the system reaches Priority, and a practice mode for training.",
+        "steps": "“Priority connection” shows the mode, the address, and whether a key and a password are saved. Press “Edit connection” to change them.\nPress “Test connection” to check the connection.\n“Priority data check” asks Priority which forms and fields it has. It only reads.\n“Stand-in control” changes how the practice copy of Priority answers: normally, slowly, or not at all.",
+        "tips": "The key and the password are stored encrypted and are never shown again.\nIn the live system, every box that is saved becomes a line in Priority."
+      },
+      "settingsReceiving": {
+        "title": "Receiving",
+        "purpose": "The rules for receiving: the vendor order, packaging types, expiry alerts, shelf life, storage rooms and the storage text on labels.",
+        "steps": "“Vendor receiving order”: choose the one Priority order that vendor boxes are received under, from the list or by typing any order number.\n“Packaging type”: add the packagings and what one empty packaging weighs. Each item chooses one in the catalog.\nFor each category set the days to expiry (shelf life) and the alert days (how many days before expiry a box counts as expiring soon).\nFor each category choose the storage room and the storage text printed on its labels.",
+        "tips": "Each change is saved at once, with a short confirmation.\nA box goes into the storage room named by its Priority order. The category’s room is used when the order names none."
+      },
+      "settingsScale": {
+        "title": "Scale",
+        "purpose": "Connect or disconnect the scale of this computer.",
+        "steps": "Close any other program that uses the scale (for example GetScale).\nPress “Connect the scale”, choose the scale’s port in the browser’s window, and confirm.\nThe state changes to “Scale connected” and “Weight now” shows the live weight.\nIf the numbers look wrong open “Scale setup and what it sends” and change the speed or the reversed-numbers option.\nPress “Disconnect the scale” to give the scale back to the old program.",
+        "tips": "The scale works only in Chrome or Edge on a secure (https) address."
+      },
+      "labels": {
+        "title": "Label layouts",
+        "purpose": "All the label layouts the system prints: item labels, the box label, the pallet label and shipping labels.",
+        "steps": "Press “New layout”, choose a name, the kind and the size in millimetres, and press “Create and open”.\nOn each row the pencil opens a layout, the two squares duplicate it and the bin deletes it.\nOn an item layout, the star makes it the layout chosen first when printing.\nPress a layout to design it in the label editor.",
+        "tips": "There is only one box label. The system needs a box layout to print box labels and a pallet layout to make pallets. Shipping labels are printed from the Shipping labels screen with the layout chosen in System settings."
+      },
+      "labelEditor": {
+        "title": "Label designer",
+        "purpose": "Design one label: its size and the things on it.",
+        "steps": "Under “Add to the label” press a button to put a text, a field (a value that changes with each label), a line, a box, a barcode, a QR code or a logo on the label.\nClick an element on the label to select it. Drag it to move it and drag its handles to resize it.\nThe card “Selected element” has the exact position, size, typeface, bold, alignment and language of the text.\n“Ready-made sections” adds a dates box, a warning box, the item names, or a complete box label in one press.\nPress “Test print” to print the label on a page of its exact size, and “Save” (or Ctrl+S) to keep your changes.",
+        "tips": "Undo and Redo (Ctrl+Z, Ctrl+Y) bring back what you changed.\nOpen “Show the keys” at the bottom for every keyboard shortcut."
+      },
+      "adminUsers": {
+        "title": "Users",
+        "purpose": "The people who can sign in, and what each one may see and do.",
+        "steps": "Press “New user”, type the name and the email (the email is the login and cannot be changed later) and choose the language.\nFor each screen choose “No access”, “View only” or “Everything”. Open the screen’s arrow to allow only single actions.\nChoose the devices the person may use: a desktop computer, a phone, or both.\nPress “Create user”. The system makes a temporary password and sends it by email with the sign-in link. It is also shown once on the screen.\nThe three dots on a person’s card open the actions: edit and permissions, reset the password, disable or enable, delete, and reset two-step verification.",
+        "tips": "The person chooses their own password the first time they sign in.\nYou can only give permissions that you have yourself."
+      },
+      "adminLog": {
+        "title": "Activity log",
+        "purpose": "Everything that happens in the system, newest first. Entries can never be changed or deleted.",
+        "steps": "Use “Filter the log” to choose a person, an action and a range of dates, and press “Show”.\nEach row shows when, who, what, what it concerned and from which device.\nUse the page buttons at the bottom to move between pages.\nPress “Print report” to print or save a report of what the filter shows.",
+        "tips": "Press “Clear” to remove the filter."
+      },
+      "adminSends": {
+        "title": "Sends to Priority",
+        "purpose": "Boxes that Priority has not taken yet. Every box is saved first and then sent. This list shows the ones still waiting.",
+        "steps": "If the list is empty, every box has reached Priority.\n“Retrying” means Priority did not answer. The system tries again by itself, first after 30 seconds and then with longer breaks.\n“Needs attention” means Priority refused the box. The reason is shown in the last column.\nFix the cause in Priority (for example the item, the storage room or the order), then press “Send again”, or “Send all again” for all of them.",
+        "tips": "Nothing is lost while a box waits here."
+      },
+      "adminSecurity": {
+        "title": "Security",
+        "purpose": "Keep the system safe: warnings, who is signed in where, and the automatic sign-out.",
+        "steps": "“Security warnings” lists attempts that look like someone trying to break in. Press “Mark as seen” when you have read them.\n“Where people are signed in” lists every signed-in place with the person, the device, the address and the time. Press “Sign out” on a place you do not recognise.\n“Automatic sign-out”: choose how long a person may leave the system untouched, and press “Save”.",
+        "tips": "A red number on the menu means there are new warnings.\nAn account locked after 5 wrong passwords opens again by itself after 15 minutes."
+      },
+      "account": {
+        "title": "My account",
+        "purpose": "Your own password and two-step verification.",
+        "steps": "Press “Change password” to choose a new password. You stay signed in here; every other place is signed out.\nPress “Turn on” to set up two-step verification: type your password, scan the picture with an authenticator app, and type the 6-digit code.\nSave the backup codes in a safe place. Each works once, if you lose your phone.",
+        "tips": "If you lose your phone and have no backup codes, ask the administrator to reset your two-step verification."
+      },
+      "adminMessages": {
+        "title": "Messages",
+        "purpose": "Questions, requests, problems and suggestions that people send from any page. Each one says exactly what it is about.",
+        "steps": "A red number on the Administration menu and on this tab shows how many new messages are waiting. A notice also appears when a new one arrives.\nEach message shows its kind (question, request, problem or suggestion), the screen and the subject it is about, whether it is urgent, who sent it, from which device and when.\nRead the person’s own words under it. “Sent from the page” shows the page they were on.\nType an answer if you want (the sender reads it under “Your messages” in the help window), and press “Mark as done”.\nUse the buttons New, Answered and All to choose which messages are listed.",
+        "tips": "Urgent messages are always on top.\nEvery message and every answer is also written in the activity log."
+      },
+      "shipping": {
+        "title": "Shipping labels",
+        "purpose": "Labels for the boxes of an order, after the order was picked and confirmed in Priority. Nothing is picked or counted here.",
+        "steps": "When an order is picked and confirmed in Priority, Priority sends its details here and the order appears in the list.\nPress “Print labels” on the order.\nChoose Boxes or Pallets. A box gets one label. A pallet gets several labels (4 to start with), all with the same number.\nChoose how many boxes or pallets, and for pallets how many labels for each. The window shows the label and the numbering: Box 1 of 10 up to Box 10 of 10, or Pallet 1 of 10 four times, then Pallet 2 of 10 four times, and so on.\nPress Print. The labels come out in order, and the button shows how many there will be.\nThe list shows which orders were already printed and which are still waiting.",
+        "tips": "With 10 pallets and 4 labels for each, 40 labels print: 4 of each number.\nUse the search box to find an order by its number, the customer or the city.\nIf Priority sends the same order again, it is updated in the list and can be printed again.\nThe address Priority needs, the layout, the number to start from and the labels for each pallet are set in System settings, under Company and labels."
+      }
+    },
+    "more": "Still stuck? Use the tabs above: “Ask a question” gets an answer from the manual, and “Message the admin” sends your question or request to the administrators."
+  },
+  "contact": {
+    "tabs": {
+      "how": "How it works",
+      "ask": "Ask a question",
+      "message": "Message the admin"
+    },
+    "ask": {
+      "title": "Ask a question",
+      "intro": "Ask anything about this page or about how to do something.",
+      "placeholder": "For example: how do I print labels for several items?",
+      "label": "Your question",
+      "send": "Ask",
+      "asking": "Thinking…",
+      "you": "You",
+      "helper": "Answer",
+      "clear": "New question",
+      "notConfigured": "Questions to the helper are not switched on yet. Send your question to the admin instead.",
+      "rate": "You asked many questions in a short time. Wait a few minutes, or message the admin.",
+      "unavailable": "The helper did not answer. Try again in a moment, or message the admin.",
+      "invalid": "Type your question (up to 600 characters).",
+      "notSure": "Not what you needed?",
+      "toAdmin": "Send this question to the admin",
+      "note": "The answer comes from a computer program that reads the manual. If it is wrong or unclear, message the admin."
+    },
+    "message": {
+      "title": "Message the admin",
+      "intro": "Send a question, a request, a problem or a suggestion to the administrators. Choose what it is about, so they see exactly what you mean.",
+      "kind": "What is it?",
+      "kinds": {
+        "question": "A question",
+        "request": "A request",
+        "problem": "A problem",
+        "suggestion": "A suggestion"
+      },
+      "kindHints": {
+        "question": "I want to know how to do something, or what something means",
+        "request": "I need something done or allowed",
+        "problem": "Something does not work or looks wrong",
+        "suggestion": "An idea to make the system better"
+      },
+      "screen": "Which screen is it about?",
+      "screens": {
+        "dashboard": "Dashboard",
+        "catalog": "Item catalog",
+        "receiving": "Goods receiving",
+        "vendor": "Vendor receiving",
+        "inventory": "Inventory management",
+        "settings": "System settings",
+        "admin": "System administration",
+        "account": "My account",
+        "signin": "Signing in",
+        "other": "Something else",
+        "shipping": "Shipping labels"
+      },
+      "subject": "What about it?",
+      "subjects": {
+        "question": {
+          "howTo": "How do I do something",
+          "meaning": "What does a word, a number or a colour mean",
+          "whyThis": "Why does the screen show this",
+          "other": "Something else"
+        },
+        "request": {
+          "permission": "Permission for a screen or an action",
+          "user": "A new user, or a change to a user",
+          "password": "Reset my password",
+          "data": "A change to an item or to other data",
+          "label": "A change to a label",
+          "feature": "Something new in the system",
+          "other": "Something else"
+        },
+        "problem": {
+          "notWorking": "Something does not work, or shows an error",
+          "wrongData": "A number or some data looks wrong",
+          "printing": "Printing",
+          "scale": "The scale",
+          "slow": "The system is slow or does not load",
+          "other": "Something else"
+        },
+        "suggestion": {
+          "screen": "A change to this screen",
+          "report": "A new report or list",
+          "feature": "A new feature",
+          "other": "Something else"
+        }
+      },
+      "urgency": "How urgent is it?",
+      "normal": "Normal",
+      "urgent": "Urgent: it stops my work",
+      "details": "Write it in your own words",
+      "detailsHint": "Say what you did, what you saw and what you want. Up to 1000 characters.",
+      "send": "Send to the admin",
+      "sending": "Sending…",
+      "sent": "Your message was sent. The admin will see it, and the answer will appear under “Your messages”.",
+      "another": "Write another message",
+      "invalid": "Choose what it is about, and write at least 5 characters.",
+      "rate": "You sent many messages in the last hour. Try again later.",
+      "failed": "The message was not sent. Try again.",
+      "mine": "Your messages",
+      "none": "You have not sent any messages yet.",
+      "waiting": "Waiting",
+      "answered": "Answered",
+      "answer": "Answer from {name}"
+    },
+    "notice": {
+      "title": "New message from {name}",
+      "body": "{kind}: {screen}",
+      "open": "Open"
+    }
+  },
+  "shipping": {
+    "noLayout": "There is no shipping label layout. Create one in System settings, under Company and labels, in the label designer.",
+    "searchLabel": "Search the orders",
+    "searchPlaceholder": "Order number, customer or city",
+    "search": "Search",
+    "count": "{count, plural, one {# order} other {# orders}}",
+    "setup": "Set up",
+    "empty": "No orders have arrived from Priority yet.",
+    "noMatch": "No order matches the search.",
+    "emptyHint": "When an order is picked and confirmed in Priority, it appears here by itself, ready for its labels. The address Priority needs is in System settings, under Company and labels.",
+    "columns": {
+      "order": "Order",
+      "customer": "Customer",
+      "city": "City",
+      "shipDate": "Shipping date",
+      "received": "Received",
+      "printed": "Labels"
+    },
+    "test": "Test",
+    "printedTimes": "{count, plural, one {Printed once} other {Printed # times}}",
+    "notPrinted": "Not printed",
+    "print": "Print labels",
+    "delete": "Delete",
+    "printTitle": "Labels for order {order}",
+    "fewer": "One less",
+    "more": "One more",
+    "askedByPriority": "Priority asked for {count}.",
+    "invalidCount": "Type a whole number from 1 to {max}.",
+    "cancel": "Cancel",
+    "printN": "{count, plural, one {Print # label} other {Print # labels}}",
+    "deleted": "The order was deleted from the list.",
+    "confirmDelete": {
+      "title": "Delete this order?",
+      "body": "Order {order} is removed from the list. Priority is not changed, and it can send the order again."
+    },
+    "errors": {
+      "NOT_FOUND": "This order is no longer in the list.",
+      "NO_LAYOUT": "There is no shipping label layout to print with.",
+      "INVALID_INPUT": "The number of labels must be a whole number from 1 to 200.",
+      "NOT_ALLOWED": "You are not allowed to do this.",
+      "GENERIC": "Something went wrong. Try again."
+    },
+    "unitLabel": "The labels are for",
+    "units": {
+      "box": "Boxes",
+      "pallet": "Pallets"
+    },
+    "howManyBoxes": "How many boxes?",
+    "howManyPallets": "How many pallets?",
+    "copiesLabel": "Labels for each pallet",
+    "sequenceBox": "One label for each box:",
+    "sequencePallet": "{copies, plural, one {# label} other {# labels}} for each pallet:",
+    "inAll": "{total} labels in all"
+  }
+}
